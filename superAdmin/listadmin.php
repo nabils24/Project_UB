@@ -213,7 +213,7 @@ $usersDt = ambildata($conn, 'SELECT * FROM users WHERE role IN ("admin");');
     }
 
     function confirmDelete(uuid) {
-        if (confirm("Are you sure you want to delete this user?")) {
+        if (confirm("Are you sure you want to delete this admin?")) {
             window.location.href = 'delete_admin.php?uuid=' + uuid;
         }
     }

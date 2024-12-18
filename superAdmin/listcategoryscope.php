@@ -184,9 +184,9 @@ $categoryDT = ambildata($conn, 'SELECT * FROM category_scope');
         }, 500);
     }
 
-    function confirmDelete(uuid) {
-        if (confirm("Are you sure you want to delete this user?")) {
-            window.location.href = 'delete_users.php?uuid=' + uuid;
+    function confirmDelete(id) {
+        if (confirm("Are you sure you want to delete this category?")) {
+            window.location.href = 'delete_categoryscope.php?id=' + id;
         }
     }
 
